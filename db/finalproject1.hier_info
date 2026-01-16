@@ -1,0 +1,122 @@
+|FinalBuild
+a <= seven_seg_decoder:inst7.a
+in1 => 1:inst15.B1
+in1 => 1:inst17.B1
+in0 => 1:inst15.B0
+in0 => 1:inst17.B0
+clear => FSM:inst19.clear
+clear => FSM:inst20.clear
+clk => FSM:inst19.clk
+clk => shiftRegister:inst16.CLK
+clk => FSM:inst20.clk
+clk => shiftRegister:inst.CLK
+b <= seven_seg_decoder:inst7.b
+c <= seven_seg_decoder:inst7.c
+d <= seven_seg_decoder:inst7.d
+e <= seven_seg_decoder:inst7.e
+f <= seven_seg_decoder:inst7.f
+g <= seven_seg_decoder:inst7.g
+
+
+|FinalBuild|seven_seg_decoder:inst7
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FinalBuild|shiftRegister:inst16
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+R1 => inst.DATAIN
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Load/Shift => inst13.IN1
+Load/Shift => inst7.IN0
+R0 => inst14.IN1
+
+
+|FinalBuild|FSM:inst19
+f1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+clear => inst1.ACLR
+clear => inst.ACLR
+clk => inst1.CLK
+clk => inst.CLK
+m1 => inst1.DATAIN
+f0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+m0 => inst.DATAIN
+
+
+|FinalBuild|1:inst15
+AgreatB <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst2.IN0
+A0 => inst1.IN0
+A0 => inst14.IN0
+A0 => inst18.IN1
+A1 => inst2.IN1
+A1 => inst.IN0
+A1 => inst13.IN0
+A1 => inst17.IN0
+B1 => inst15.IN0
+B1 => inst6.IN1
+B1 => inst3.IN1
+B1 => inst17.IN1
+B0 => inst16.IN0
+B0 => inst6.IN2
+B0 => inst7.IN2
+B0 => inst18.IN0
+AlessB <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+AequalB <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FinalBuild|shiftRegister:inst
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+R1 => inst.DATAIN
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Load/Shift => inst13.IN1
+Load/Shift => inst7.IN0
+R0 => inst14.IN1
+
+
+|FinalBuild|FSM:inst20
+f1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+clear => inst1.ACLR
+clear => inst.ACLR
+clk => inst1.CLK
+clk => inst.CLK
+m1 => inst1.DATAIN
+f0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+m0 => inst.DATAIN
+
+
+|FinalBuild|1:inst17
+AgreatB <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst2.IN0
+A0 => inst1.IN0
+A0 => inst14.IN0
+A0 => inst18.IN1
+A1 => inst2.IN1
+A1 => inst.IN0
+A1 => inst13.IN0
+A1 => inst17.IN0
+B1 => inst15.IN0
+B1 => inst6.IN1
+B1 => inst3.IN1
+B1 => inst17.IN1
+B0 => inst16.IN0
+B0 => inst6.IN2
+B0 => inst7.IN2
+B0 => inst18.IN0
+AlessB <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+AequalB <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
