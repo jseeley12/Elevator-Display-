@@ -1,0 +1,59 @@
+|911
+pin_name1 <= seven_seg_decoder:inst.a
+HELP => seven_seg_decoder:inst.x0
+HELP => seven_seg_decoder:inst1.x0
+HELP => seven_seg_decoder:inst2.x0
+pin_name2 <= seven_seg_decoder:inst.b
+pin_name3 <= seven_seg_decoder:inst.c
+pin_name4 <= seven_seg_decoder:inst.f
+pin_name5 <= seven_seg_decoder:inst.g
+pin_name6 <= seven_seg_decoder:inst1.b
+pin_name7 <= seven_seg_decoder:inst1.c
+pin_name8 <= seven_seg_decoder:inst2.b
+pin_name9 <= seven_seg_decoder:inst2.c
+pin_name10 <= seven_seg_decoder:inst.d
+pin_name11 <= seven_seg_decoder:inst.e
+
+
+|911|seven_seg_decoder:inst
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|911|seven_seg_decoder:inst1
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|911|seven_seg_decoder:inst2
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
