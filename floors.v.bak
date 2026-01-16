@@ -1,0 +1,18 @@
+module (x2, x1, x0);
+
+input x2, x1, x0;
+
+output z;
+
+reg z;
+
+always@(x2, x1, x0);
+begin
+case({x2, x1, x0})
+3'b000: z = 3'b001;
+3'b001: z = 3'b010;
+3'b010: z = 3'b011;
+3'b011: z = 3'b100;
+3'b100: z = 3'b101;
+3'b101: z = 3'b110;
+3'b110: z = 3'b111;

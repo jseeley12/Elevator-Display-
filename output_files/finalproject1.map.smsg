@@ -1,0 +1,6 @@
+Warning (10268): Verilog HDL information at elevator.v(14): always construct contains both blocking and non-blocking assignments File: U:/CPRE 281/FinalProject/elevator.v Line: 14
+Warning (10268): Verilog HDL information at elevator.v(160): always construct contains both blocking and non-blocking assignments File: U:/CPRE 281/FinalProject/elevator.v Line: 160
+Info (10281): Verilog HDL Declaration information at elevator.v(4): object "open" differs only in case from object "OPEN" in the same scope File: U:/CPRE 281/FinalProject/elevator.v Line: 4
+Info (10281): Verilog HDL Declaration information at elevator.v(4): object "close" differs only in case from object "CLOSE" in the same scope File: U:/CPRE 281/FinalProject/elevator.v Line: 4
+Info (10281): Verilog HDL Declaration information at elevator.v(4): object "up" differs only in case from object "UP" in the same scope File: U:/CPRE 281/FinalProject/elevator.v Line: 4
+Info (10281): Verilog HDL Declaration information at elevator.v(4): object "down" differs only in case from object "DOWN" in the same scope File: U:/CPRE 281/FinalProject/elevator.v Line: 4
